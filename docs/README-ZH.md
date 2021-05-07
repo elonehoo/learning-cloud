@@ -1,17 +1,17 @@
-> This is the 2019 open source project of Hangzhou Vocational and Technical College of Science and Technology
+> 这是 杭州科技职业技术学院 的 2019 开源项目
 
-## Document directory
+## 文件目录
 ```markdown
-> [hzpt-controller](The control layer is used to control the calls of the API interface and the service layer)
-> [hzpt-jurisdiction](Permission layer, used to control the use and deployment of permissions)
-> [hzpt-mapper](Persistence layer, one-to-one correspondence with the database)
+> [hzpt-controller](控制层用于控制API接口和服务层的调用)
+> [hzpt-jurisdiction](权限层，用于控制权限的使用和部署)
+> [hzpt-mapper](持久层，与数据库一对一对应)
 > ......
 ```
 
-## Author Directory
+## 作者目录
 ```markdown
 > []()
-> [Xiao Xunyao](https://github.com/xiaoxunyao)
+> [晓寻遥](https://github.com/xiaoxunyao)
 > []()
 > []()
 > []()
