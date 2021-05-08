@@ -53,6 +53,8 @@
 >> UserRoleService
 >> UserService
 >> UserTopicService
+>> DailyReportService
+>> WeeklyReportService
 ```
 ```java
 // Insert a record (select field, strategy insert)
@@ -125,6 +127,8 @@ int count();
 >> UserMapper
 >> UserRoleMapper
 >> UserTopicMapper
+>> DailyReportMapper
+>> WeeklyReportMapper
 ```
 ```java
 // Insert a record
