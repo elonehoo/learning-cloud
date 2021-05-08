@@ -54,6 +54,8 @@
 >> UserRoleService
 >> UserService
 >> UserTopicService
+>> DailyReportService
+>> WeeklyReportService
 ```
 ```java
 // 插入一条记录（选择字段，策略插入）
@@ -126,6 +128,8 @@ int count();
 >> UserMapper
 >> UserRoleMapper
 >> UserTopicMapper
+>> DailyReportMapper
+>> WeeklyReportMapper
 ```
 ```java
 // 插入一条记录
