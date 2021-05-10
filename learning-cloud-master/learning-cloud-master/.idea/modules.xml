@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hzpt-controller/hzpt-controller.iml" filepath="$PROJECT_DIR$/hzpt-controller/hzpt-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hzpt-jurisdiction/hzpt-jurisdiction.iml" filepath="$PROJECT_DIR$/hzpt-jurisdiction/hzpt-jurisdiction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hzpt-mapper/hzpt-mapper.iml" filepath="$PROJECT_DIR$/hzpt-mapper/hzpt-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hzpt-qiuqiuqiuyaGet/hzpt-qiuqiuqiuyaGet.iml" filepath="$PROJECT_DIR$/hzpt-qiuqiuqiuyaGet/hzpt-qiuqiuqiuyaGet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-learning-cloud.iml" filepath="$PROJECT_DIR$/spring-boot-learning-cloud.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://1.15.153.38:3306/mobile_internet_learning_cloud?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: hcy
+    password: HCYhcy@0901
+    type: com.alibaba.druid.pool.DruidDataSource

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hzpt-controller" />
+        <module name="hzpt-jurisdiction" />
+        <module name="hzpt-qiuqiuqiuyaGet" />
+        <module name="hzpt-mapper" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hzpt-controller" target="15" />
+      <module name="hzpt-jurisdiction" target="15" />
+      <module name="hzpt-mapper" target="15" />
+      <module name="hzpt-qiuqiuqiuyaGet" target="1.7" />
+      <module name="spring-boot-learning-cloud" target="15" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="hzpt-controller" options="-parameters" />
+      <module name="hzpt-jurisdiction" options="-parameters" />
+      <module name="hzpt-mapper" options="-parameters" />
+      <module name="hzpt-qiuqiuqiuyaGet" options="-parameters" />
+    </option>
+  </component>
+</project>
