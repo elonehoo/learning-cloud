@@ -8,6 +8,7 @@
         <module>hzpt-controller</module>
         <module>hzpt-jurisdiction</module>
         <module>hzpt-mrj</module>
+        <module>hzpt-qiuqiuqiuyaGet</module>
     </modules>
 
     <parent>
