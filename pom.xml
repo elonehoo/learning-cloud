@@ -7,6 +7,7 @@
         <module>hzpt-mapper</module>
         <module>hzpt-controller</module>
         <module>hzpt-jurisdiction</module>
+        <module>hzpt-mrj</module>
     </modules>
 
     <parent>
