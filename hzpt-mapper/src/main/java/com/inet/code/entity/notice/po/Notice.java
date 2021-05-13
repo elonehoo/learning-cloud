@@ -41,12 +41,6 @@ public class Notice implements Serializable {
     private String senderUserId;
 
     /**
-     * 接受者id(UUID)(为空发全部)
-     */
-    @TableField("recipient_user_id")
-    private String recipientUserId;
-
-    /**
      * 标题
      */
     @TableField("headline")
@@ -63,12 +57,6 @@ public class Notice implements Serializable {
      */
     @TableField("accessory_url")
     private String accessoryUrl;
-
-    /**
-     * 状态 
-     */
-    @TableField("status")
-    private Boolean status;
 
     /**
      * 创建时间
