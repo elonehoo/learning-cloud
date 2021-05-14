@@ -9,6 +9,7 @@
         <module>hzpt-jurisdiction</module>
         <module>hzpt-mrj</module>
         <module>hzpt-qiuqiuqiuyaGet</module>
+        <module>hzpt-abcI</module>
     </modules>
 
     <parent>

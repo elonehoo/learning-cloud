@@ -1,5 +1,6 @@
 package com.inet.code.entity.notice.po;
 
+import cn.afterturn.easypoi.excel.annotation.Excel;
 import com.baomidou.mybatisplus.annotation.*;
 
 import java.time.LocalDateTime;
@@ -31,58 +32,51 @@ public class Notice implements Serializable {
     /**
      * 主键(UUID)
      */
-    @TableId(value = "id",type = IdType.ASSIGN_UUID)
+    @TableId(value = "id", type = IdType.ASSIGN_UUID)
+    @Excel(name = "id")
     private String id;
 
     /**
      * 发送者id(UUID)
      */
     @TableField("sender_user_id")
+    @Excel(name = "sender_user_id")
     private String senderUserId;
-
-    /**
-     * 接受者id(UUID)(为空发全部)
-     */
-    @TableField("recipient_user_id")
-    private String recipientUserId;
 
     /**
      * 标题
      */
     @TableField("headline")
+    @Excel(name = "headline")
     private String headline;
 
     /**
      * 内容
      */
     @TableField("content")
+    @Excel(name = "content")
     private String content;
 
     /**
      * 附件URL
      */
     @TableField("accessory_url")
+    @Excel(name = "accessory_url")
     private String accessoryUrl;
-
-    /**
-     * 状态 
-     */
-    @TableField("status")
-    private Boolean status;
 
     /**
      * 创建时间
      */
-    @TableField(value = "gmt_create",fill = FieldFill.INSERT)
+    @TableField(value = "gmt_create", fill = FieldFill.INSERT)
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    @Excel(name = "gmt_create", format = "yyyy-MM-dd HH:mm:ss")
     private Date gmtCreate;
 
     /**
      * 修改时间
      */
-    @TableField(value = "gmt_modified",fill = FieldFill.INSERT_UPDATE)
+    @TableField(value = "gmt_modified", fill = FieldFill.INSERT_UPDATE)
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    @Excel(name = "gmt_modified", format = "yyyy-MM-dd HH:mm:ss")
     private Date gmtModify;
-
-
 }

@@ -1,5 +1,6 @@
 package com.inet.code.entity.assignment.po;
 
+import cn.afterturn.easypoi.excel.annotation.Excel;
 import com.baomidou.mybatisplus.annotation.*;
 
 import java.time.LocalDateTime;
@@ -32,36 +33,42 @@ public class Assignment implements Serializable {
      * 主键(UUID)
      */
     @TableId(value = "id",type = IdType.ASSIGN_UUID)
+    @Excel(name = "id")
     private String id;
 
     /**
      * 发送者id(UUID)
      */
     @TableField("sender_user_id")
+    @Excel(name = "sender_user_id")
     private String senderUserId;
 
     /**
      * 接受者id(UUID)(为空发全部)
      */
     @TableField("recipient_user_id")
+    @Excel(name = "recipient_user_id")
     private String recipientUserId;
 
     /**
      * 任务类型id(UUID)
      */
     @TableField("category_id")
+    @Excel(name = "category_id")
     private String categoryId;
 
     /**
      * 标题 
      */
     @TableField("headline")
+    @Excel(name = "headline")
     private String headline;
 
     /**
      * 内容
      */
     @TableField("content")
+    @Excel(name = "content")
     private String content;
 
     /**
@@ -69,19 +76,22 @@ public class Assignment implements Serializable {
      */
     @TableField("start_time")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    @Excel(name = "start_time", format = "yyyy-MM-dd HH:mm:ss")
     private Date startTime;
 
     /**
-     * 结束时间 
+     * 结束时间
      */
     @TableField("end_time")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    @Excel(name = "end_time", format = "yyyy-MM-dd HH:mm:ss")
     private Date endTime;
 
     /**
      * 状态 
      */
     @TableField("status")
+    @Excel(name = "status")
     private Boolean status;
 
     /**
@@ -89,6 +99,7 @@ public class Assignment implements Serializable {
      */
     @TableField(value = "gmt_create",fill = FieldFill.INSERT)
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    @Excel(name = "gmt_create",format = "yyyy-MM-dd HH:mm:ss")
     private Date gmtCreate;
 
     /**
@@ -96,7 +107,6 @@ public class Assignment implements Serializable {
      */
     @TableField(value = "gmt_modified",fill = FieldFill.INSERT_UPDATE)
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    @Excel(name = "gmt_modified",format = "yyyy-MM-dd HH:mm:ss")
     private Date gmtModify;
-
-
 }
