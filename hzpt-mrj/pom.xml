@@ -7,9 +7,12 @@
         <groupId>com.inet</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.inet</groupId>
     <artifactId>hzpt-mrj</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
 
     <name>hzpt-mrj</name>
 
@@ -17,20 +20,27 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>16</maven.compiler.source>
+        <maven.compiler.target>16</maven.compiler.target>
     </properties>
 
+
     <dependencies>
+
+        <!--junit-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.11</version>
             <scope>test</scope>
         </dependency>
+
+        <!--hzpt-mapper-->
+        <dependency>
+            <groupId>com.inet</groupId>
+            <artifactId>hzpt-mapper</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
-    <build>
-
-    </build>
 </project>
