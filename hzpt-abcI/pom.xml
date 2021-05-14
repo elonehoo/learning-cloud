@@ -11,10 +11,10 @@
   </parent>
 
   <groupId>com.inet</groupId>
-  <artifactId>hzpt-controller</artifactId>
+  <artifactId>hzpt-abcI</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>hzpt-controller</name>
+  <name>hzpt-abcI</name>
   <!-- FIXME change it to the project's website -->
   <url>https://www.example.com</url>
 
@@ -30,17 +30,31 @@
       <artifactId>hzpt-mapper</artifactId>
       <version>0.0.1-SNAPSHOT</version>
     </dependency>
-
-    <dependency>
-      <groupId>com.inet</groupId>
-      <artifactId>hzpt-abcI</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
-    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.jsonwebtoken</groupId>
+      <artifactId>jjwt-impl</artifactId>
+      <version>0.11.2</version>
+    </dependency>
+    <dependency>
+      <groupId>io.jsonwebtoken</groupId>
+      <artifactId>jjwt-jackson</artifactId>
+      <version>0.11.2</version>
+    </dependency>
+    <dependency>
+      <groupId>io.jsonwebtoken</groupId>
+      <artifactId>jjwt-api</artifactId>
+      <version>0.11.2</version>
+    </dependency>
+    <dependency>
+      <groupId>cn.afterturn</groupId>
+      <artifactId>easypoi-spring-boot-starter</artifactId>
+      <version>4.0.0</version>
     </dependency>
   </dependencies>
 
