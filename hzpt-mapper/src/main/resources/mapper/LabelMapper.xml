@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.inet.code.mapper.LabelMapper">
-
+    <update id="updateLabelNameByTopicId" parameterType="String">
+        update milc_label
+        inner join milc_topic
+        on milc_label.id = milc_topic.label_id
+        set milc_label.name = #{name},
+            milc_label.update_time = current_time()
+        where milc_topic.id = #{id}
+    </update>
 </mapper>
