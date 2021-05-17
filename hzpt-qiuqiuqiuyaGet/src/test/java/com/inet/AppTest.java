@@ -1,6 +1,7 @@
 package com.inet;
 
 
+import com.inet.code.service.GetNoticeService;
 import com.inet.code.service.NoticeService;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -16,13 +17,16 @@ import javax.annotation.Resource;
 @SpringBootTest
 public class AppTest {
 
+
     @Resource
-    private NoticeService noticeService;
+    private GetNoticeService getNoticeService;
+
     /**
      * Rigorous Test :-)
      */
     @Test
     public void shouldAnswerWithTrue() {
-        System.out.println(noticeService.getById("1"));
+        //System.out.println(getNoticeService.getTest("1"));
+        System.out.println(getNoticeService.getAllNotice());
     }
 }
