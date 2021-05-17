@@ -8,7 +8,7 @@ import com.inet.code.entity.user.po.User;
  * @version 1.0
  * @date Created in 2021/5/11 14:43
  */
-public interface UserServer extends IService<User> {
+public interface UserServer {
 
     /**
      * 通过id更新用户信息

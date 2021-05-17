@@ -1,11 +1,8 @@
 package com.inet.service.impl;
 
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.inet.code.entity.user.po.User;
-import com.inet.code.mapper.UserMapper;
 import com.inet.code.service.*;
 import com.inet.service.UserServer;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -20,18 +17,19 @@ import java.util.Map;
  */
 @Service
 @Transactional(rollbackFor = {RuntimeException.class})
-public class UserServerImpl extends ServiceImpl<UserMapper, User> implements UserServer {
+public class UserServerImpl implements UserServer {
 
-    private CipherService cipherService;
-    private UserRoleService userRoleService;
+    private final CipherService cipherService;
+    private final UserRoleService userRoleService;
+    private final UserService userService;
 
     /**
-     * 自动注入bean
+     * 自动注入
      */
-    @Autowired
-    public void setUserServiceImpl(CipherService cipherService, UserRoleService userRoleService) {
+    public UserServerImpl(CipherService cipherService, UserRoleService userRoleService, UserService userService) {
         this.cipherService = cipherService;
         this.userRoleService = userRoleService;
+        this.userService = userService;
     }
 
     /**
@@ -43,7 +41,7 @@ public class UserServerImpl extends ServiceImpl<UserMapper, User> implements Use
     @Override
     public boolean updateUserById(User user) {
         user.setGmtModify(new Date());
-        return this.updateById(user);
+        return userService.updateById(user);
     }
 
     /**
@@ -54,7 +52,7 @@ public class UserServerImpl extends ServiceImpl<UserMapper, User> implements Use
      */
     @Override
     public boolean deleteUserById(User user) {
-        if (!this.removeById(user.getId())) {
+        if (!userService.removeById(user.getId())) {
             throw new RuntimeException("删除user失败！");
         }
 
