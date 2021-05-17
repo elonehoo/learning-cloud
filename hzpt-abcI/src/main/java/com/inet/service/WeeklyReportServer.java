@@ -8,7 +8,7 @@ import com.inet.code.entity.weeklyReport.po.WeeklyReport;
  * @author HCY
  * @since 2021/5/8 2:57 下午
 */
-public interface WeeklyReportServer extends IService<WeeklyReport> {
+public interface WeeklyReportServer {
     /**
      * 上传周报
      *

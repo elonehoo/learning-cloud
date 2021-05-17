@@ -1,8 +1,7 @@
 package com.inet.service.impl;
 
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.inet.code.entity.weeklyReport.po.WeeklyReport;
-import com.inet.code.mapper.WeeklyReportMapper;
+import com.inet.code.service.WeeklyReportService;
 import com.inet.service.WeeklyReportServer;
 import com.inet.util.JwtUtil;
 import org.springframework.stereotype.Service;
@@ -17,7 +16,13 @@ import java.util.UUID;
  * @date Created in 2021/5/11 14:18
  */
 @Service
-public class WeeklyServerImpl extends ServiceImpl<WeeklyReportMapper, WeeklyReport> implements WeeklyReportServer {
+public class WeeklyServerImpl implements WeeklyReportServer {
+
+    private final WeeklyReportService weeklyReportService;
+
+    public WeeklyServerImpl(WeeklyReportService weeklyReportService) {
+        this.weeklyReportService = weeklyReportService;
+    }
 
     /**
      * 保存周报
@@ -37,6 +42,6 @@ public class WeeklyServerImpl extends ServiceImpl<WeeklyReportMapper, WeeklyRepo
         weeklyReport.setGmtCreate(new Date());
         weeklyReport.setGmtModify(new Date());
 
-        return this.save(weeklyReport);
+        return weeklyReportService.save(weeklyReport);
     }
 }
