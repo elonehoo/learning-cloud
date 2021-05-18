@@ -73,6 +73,13 @@ public class GitLog implements Serializable {
     private Date startTime;
 
     /**
+     * 解题状态
+     */
+    @TableField("status")
+    @Excel(name = "status")
+    private Integer status;
+
+   /**
      * 解题结束时间
      */
     @TableField("end_time")
