@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.inet.code.mapper.DailyReportMapper">
+    <insert id="insertDailyReport" parameterType="com.inet.code.entity.po.DailyReport" >
+        insert into milc_daily_report(`id`,`user_id`,`audit_status`,`content`,`create_time`,`modify_time`)
+        values (#{dailyReportId},#{userId},#{auditStatus},#{content},CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)
+    </insert>
+    <select id="selectAllDailyReport" resultType="com.inet.code.entity.vo.DailyReportVO">
+        select `id` as `dailyReportId`,`audit_status_id` as `ownershipId`,`user_id`as `userId`,`audit_status` as `auditStatus`,`content`,`create_time` as `createTime`,`modify_time` as `modifyTime` from milc_daily_report
+    </select>
+</mapper>
