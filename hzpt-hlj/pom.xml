@@ -82,6 +82,38 @@
             <optional>true</optional>
         </dependency>
 
+        <!--爬虫相关-->
+        <!--工具-->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.9</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.htmlunit</groupId>
+            <artifactId>htmlunit</artifactId>
+            <version>2.27</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.58</version>
+        </dependency>
+<!--        &lt;!&ndash;        Jsoup&ndash;&gt;
+        &lt;!&ndash; https://mvnrepository.com/artifact/org.jsoup/jsoup &ndash;&gt;
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.11.3</version>
+        </dependency>-->
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.6.6</version>
+        </dependency>
+
     </dependencies>
 
     <build>
