@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.inet.code.mapper.WeeklyReportMapper">
+    <select id="selectAllWeeklyReport" resultType="com.inet.code.entity.vo.WeeklyReportVO">
+        select `id` as `weeklyReportId`,`user_id`as `userId`,`audit_status` as `auditStatus`,`content`,`create_time` as `createTime`,`modify_time` as `modifyTime` from milc_weekly_report
+    </select>
+</mapper>

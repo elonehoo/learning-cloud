@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.inet.code.mapper.TopicLabelMapper">
+    <insert id="insertTopicLabelFromWebsite" parameterType="com.inet.code.entity.po.TopicLabel" >
+        insert into milc_topic_label(`id`,`topic_id`,`label_id`,`create_time`,`update_time`)
+        values (#{id},#{topicId},#{labelId},CURRENT_TIMESTAMP,CURRENT_TIMESTAMP)
+    </insert>
+</mapper>
