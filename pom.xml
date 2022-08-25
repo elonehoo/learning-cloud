@@ -81,7 +81,7 @@
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.4.2</version>
+            <version>3.5.2</version>
         </dependency>
         <!--导入 丝袜哥 ( Swagger ) -->
         <dependency>
